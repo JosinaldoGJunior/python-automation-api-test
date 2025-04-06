@@ -3,6 +3,7 @@ name: API Test Suite
 on:
   schedule:
     - cron: '0 20 * * *'
+      timezone: Pacific/Auckland
   pull_request:
     branches: [main]
   workflow_dispatch:
