@@ -1,5 +1,0 @@
-2025-04-06 20:19:54,116 - INFO - 🔹 POST: https://barrigarest.wcaquino.me/transacoes | Payload: {'conta_id': '', 'descricao': 'Descricao_b0831', 'envolvido': 'Envolvidos_6ac95', 'tipo': 'DESP', 'data_transacao': '10/04/2025', 'data_pagamento': '10/04/2025', 'valor': 453.97, 'status': False}
-2025-04-06 20:19:54,117 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
-2025-04-06 20:19:54,191 - DEBUG - https://barrigarest.wcaquino.me:443 "POST /transacoes HTTP/1.1" 400 180
-2025-04-06 20:19:54,191 - INFO - 🔹 Complete response: [{"param":"data_transacao","msg":"Data da Movimentação deve ser menor ou igual à data atual","value":"10/04/2025"},{"param":"conta_id","msg":"Conta é obrigatório","value":""}]
-2025-04-06 20:19:54,192 - INFO - 🔹 Expected Status Code: 400 | Recebido: 400
