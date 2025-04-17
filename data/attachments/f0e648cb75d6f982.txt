@@ -1,0 +1,15 @@
+2025-04-17 20:21:37,604 - INFO - 🔹 POST: https://barrigarest.wcaquino.me/contas | Payload: {'nome': 'Contaa1124'}
+2025-04-17 20:21:37,605 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-04-17 20:21:37,757 - DEBUG - https://barrigarest.wcaquino.me:443 "POST /contas HTTP/1.1" 201 68
+2025-04-17 20:21:37,757 - INFO - 🔹 Complete response: {"id":2437058,"nome":"Contaa1124","visivel":true,"usuario_id":59590}
+2025-04-17 20:21:37,757 - INFO - 🔹 Expected Status Code: 201 | Recebido: 201
+2025-04-17 20:21:37,757 - INFO - 🔹 PUT: https://barrigarest.wcaquino.me/contas/2437058 | Payload: {'nome': 'E_Conta4331c'}
+2025-04-17 20:21:37,758 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-04-17 20:21:37,896 - DEBUG - https://barrigarest.wcaquino.me:443 "PUT /contas/2437058 HTTP/1.1" 200 70
+2025-04-17 20:21:37,896 - INFO - 🔹 Complete response: {"id":2437058,"nome":"E_Conta4331c","visivel":true,"usuario_id":59590}
+2025-04-17 20:21:37,896 - INFO - 🔹 Expected Status Code: 200 | Recebido: 200
+2025-04-17 20:21:37,896 - INFO - 🔹 GET: https://barrigarest.wcaquino.me/contas/2437058
+2025-04-17 20:21:37,897 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-04-17 20:21:37,970 - DEBUG - https://barrigarest.wcaquino.me:443 "GET /contas/2437058 HTTP/1.1" 200 70
+2025-04-17 20:21:37,970 - INFO - 🔹 Complete response: {"id":2437058,"nome":"E_Conta4331c","visivel":true,"usuario_id":59590}
+2025-04-17 20:21:37,970 - INFO - 🔹 Expected Status Code: 200 | Recebido: 200
