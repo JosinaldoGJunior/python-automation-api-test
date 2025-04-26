@@ -1,0 +1,10 @@
+2025-04-26 20:20:06,978 - INFO - 🔹 POST: https://barrigarest.wcaquino.me/contas | Payload: {'nome': 'Contac9ddd'}
+2025-04-26 20:20:06,979 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-04-26 20:20:07,142 - DEBUG - https://barrigarest.wcaquino.me:443 "POST /contas HTTP/1.1" 201 68
+2025-04-26 20:20:07,142 - INFO - 🔹 Complete response: {"id":2452872,"nome":"Contac9ddd","visivel":true,"usuario_id":59590}
+2025-04-26 20:20:07,143 - INFO - 🔹 Expected Status Code: 201 | Recebido: 201
+2025-04-26 20:20:07,143 - INFO - 🔹 POST: https://barrigarest.wcaquino.me/contas | Payload: {'nome': 'Contac9ddd'}
+2025-04-26 20:20:07,143 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-04-26 20:20:07,218 - DEBUG - https://barrigarest.wcaquino.me:443 "POST /contas HTTP/1.1" 400 47
+2025-04-26 20:20:07,218 - INFO - 🔹 Complete response: {"error":"Já existe uma conta com esse nome!"}
+2025-04-26 20:20:07,218 - INFO - 🔹 Expected Status Code: 400 | Recebido: 400
