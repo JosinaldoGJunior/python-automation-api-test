@@ -1,6 +1,0 @@
-2025-05-03 20:20:42,111 - INFO - 🔹 GET: https://barrigarest.wcaquino.me/contas
-2025-05-03 20:20:42,112 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
-2025-05-03 20:20:42,197 - DEBUG - https://barrigarest.wcaquino.me:443 "GET /contas HTTP/1.1" 401 None
-2025-05-03 20:20:42,200 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-05-03 20:20:42,200 - INFO - 🔹 Complete response: Unauthorized
-2025-05-03 20:20:42,201 - INFO - 🔹 Expected Status Code: 401 | Recebido: 401
