@@ -1,0 +1,15 @@
+2025-05-08 20:23:13,824 - INFO - 🔹 POST: https://barrigarest.wcaquino.me/contas | Payload: {'nome': 'Contac3c93'}
+2025-05-08 20:23:13,825 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-05-08 20:23:13,898 - DEBUG - https://barrigarest.wcaquino.me:443 "POST /contas HTTP/1.1" 201 68
+2025-05-08 20:23:13,899 - INFO - 🔹 Complete response: {"id":2466866,"nome":"Contac3c93","visivel":true,"usuario_id":59590}
+2025-05-08 20:23:13,899 - INFO - 🔹 Expected Status Code: 201 | Recebido: 201
+2025-05-08 20:23:13,899 - INFO - 🔹 POST: https://barrigarest.wcaquino.me/transacoes | Payload: {'conta_id': 2466866, 'descricao': 'Descricao_aed74', 'envolvido': 'Envolvidos_155f4', 'tipo': 'REC', 'data_transacao': '07/05/2025', 'data_pagamento': '12/05/2025', 'valor': 739.29, 'status': True}
+2025-05-08 20:23:13,900 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-05-08 20:23:14,141 - DEBUG - https://barrigarest.wcaquino.me:443 "POST /transacoes HTTP/1.1" 201 310
+2025-05-08 20:23:14,141 - INFO - 🔹 Complete response: {"id":2316672,"descricao":"Descricao_aed74","envolvido":"Envolvidos_155f4","observacao":null,"tipo":"REC","data_transacao":"2025-05-07T03:00:00.000Z","data_pagamento":"2025-05-12T03:00:00.000Z","valor":"739.29","status":true,"conta_id":2466866,"usuario_id":59590,"transferencia_id":null,"parcelamento_id":null}
+2025-05-08 20:23:14,141 - INFO - 🔹 Expected Status Code: 201 | Recebido: 201
+2025-05-08 20:23:14,141 - INFO - 🔹 DELETE: https://barrigarest.wcaquino.me/contas/2466866 | Payload: None
+2025-05-08 20:23:14,142 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-05-08 20:23:14,384 - DEBUG - https://barrigarest.wcaquino.me:443 "DELETE /contas/2466866 HTTP/1.1" 500 290
+2025-05-08 20:23:14,384 - INFO - 🔹 Complete response: {"name":"error","length":301,"severity":"ERROR","code":"23503","detail":"Key (id)=(2466866) is still referenced from table \"transacoes\".","schema":"public","table":"transacoes","constraint":"transacoes_conta_id_foreign","file":"ri_triggers.c","line":"3338","routine":"ri_ReportViolation"}
+2025-05-08 20:23:14,384 - INFO - 🔹 Expected Status Code: 500 | Recebido: 500
