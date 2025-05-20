@@ -1,0 +1,15 @@
+INFO     root:base_test.py:39 🔹 POST: https://barrigarest.wcaquino.me/contas | Payload: {'nome': 'Conta9e30a'}
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://barrigarest.wcaquino.me:443 "POST /contas HTTP/1.1" 201 68
+INFO     root:base_test.py:60 🔹 Complete response: {"id":2471355,"nome":"Conta9e30a","visivel":true,"usuario_id":59590}
+INFO     root:base_test.py:61 🔹 Expected Status Code: 201 | Recebido: 201
+INFO     root:base_test.py:39 🔹 POST: https://barrigarest.wcaquino.me/transacoes | Payload: {'conta_id': 2471355, 'descricao': 'Descricao_a892e', 'envolvido': 'Envolvidos_ae5ae', 'tipo': 'REC', 'data_transacao': '19/05/2025', 'data_pagamento': '24/05/2025', 'valor': 819.9, 'status': False}
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://barrigarest.wcaquino.me:443 "POST /transacoes HTTP/1.1" 201 311
+INFO     root:base_test.py:60 🔹 Complete response: {"id":2320584,"descricao":"Descricao_a892e","envolvido":"Envolvidos_ae5ae","observacao":null,"tipo":"REC","data_transacao":"2025-05-19T03:00:00.000Z","data_pagamento":"2025-05-24T03:00:00.000Z","valor":"819.90","status":false,"conta_id":2471355,"usuario_id":59590,"transferencia_id":null,"parcelamento_id":null}
+INFO     root:base_test.py:61 🔹 Expected Status Code: 201 | Recebido: 201
+INFO     root:base_test.py:51 🔹 DELETE: https://barrigarest.wcaquino.me/transacoes/2320584 | Payload: None
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://barrigarest.wcaquino.me:443 "DELETE /transacoes/2320584 HTTP/1.1" 204 0
+INFO     root:base_test.py:60 🔹 Complete response: 
+INFO     root:base_test.py:61 🔹 Expected Status Code: 204 | Recebido: 204
