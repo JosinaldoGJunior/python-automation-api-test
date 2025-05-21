@@ -1,5 +1,0 @@
-INFO     root:base_test.py:39 🔹 POST: https://barrigarest.wcaquino.me/transacoes | Payload: {'conta_id': '', 'descricao': 'Descricao_3b030', 'envolvido': 'Envolvidos_c5ecd', 'tipo': 'REC', 'data_transacao': '24/05/2025', 'data_pagamento': '24/05/2025', 'valor': 977.66, 'status': True}
-DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
-DEBUG    urllib3.connectionpool:connectionpool.py:544 https://barrigarest.wcaquino.me:443 "POST /transacoes HTTP/1.1" 400 180
-INFO     root:base_test.py:60 🔹 Complete response: [{"param":"data_transacao","msg":"Data da Movimentação deve ser menor ou igual à data atual","value":"24/05/2025"},{"param":"conta_id","msg":"Conta é obrigatório","value":""}]
-INFO     root:base_test.py:61 🔹 Expected Status Code: 400 | Recebido: 400
