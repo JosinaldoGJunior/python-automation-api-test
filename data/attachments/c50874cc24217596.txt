@@ -1,0 +1,15 @@
+2025-06-01 20:22:06,334 - INFO - 🔹 POST: https://barrigarest.wcaquino.me/contas | Payload: {'nome': 'Contab1e04'}
+2025-06-01 20:22:06,335 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-06-01 20:22:06,597 - DEBUG - https://barrigarest.wcaquino.me:443 "POST /contas HTTP/1.1" 201 68
+2025-06-01 20:22:06,598 - INFO - 🔹 Complete response: {"id":2474399,"nome":"Contab1e04","visivel":true,"usuario_id":59590}
+2025-06-01 20:22:06,598 - INFO - 🔹 Expected Status Code: 201 | Recebido: 201
+2025-06-01 20:22:06,598 - INFO - 🔹 POST: https://barrigarest.wcaquino.me/transacoes | Payload: {'conta_id': 2474399, 'descricao': 'Descricao_843aa', 'envolvido': 'Envolvidos_66ceb', 'tipo': 'DESP', 'data_transacao': '31/05/2025', 'data_pagamento': '05/06/2025', 'valor': 980.32, 'status': False}
+2025-06-01 20:22:06,598 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-06-01 20:22:06,664 - DEBUG - https://barrigarest.wcaquino.me:443 "POST /transacoes HTTP/1.1" 201 313
+2025-06-01 20:22:06,664 - INFO - 🔹 Complete response: {"id":2322860,"descricao":"Descricao_843aa","envolvido":"Envolvidos_66ceb","observacao":null,"tipo":"DESP","data_transacao":"2025-05-31T03:00:00.000Z","data_pagamento":"2025-06-05T03:00:00.000Z","valor":"-980.32","status":false,"conta_id":2474399,"usuario_id":59590,"transferencia_id":null,"parcelamento_id":null}
+2025-06-01 20:22:06,664 - INFO - 🔹 Expected Status Code: 201 | Recebido: 201
+2025-06-01 20:22:06,664 - INFO - 🔹 DELETE: https://barrigarest.wcaquino.me/transacoes/2322860 | Payload: None
+2025-06-01 20:22:06,665 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-06-01 20:22:06,910 - DEBUG - https://barrigarest.wcaquino.me:443 "DELETE /transacoes/2322860 HTTP/1.1" 204 0
+2025-06-01 20:22:06,910 - INFO - 🔹 Complete response: 
+2025-06-01 20:22:06,910 - INFO - 🔹 Expected Status Code: 204 | Recebido: 204
