@@ -1,0 +1,5 @@
+2025-06-07 20:21:18,535 - INFO - 🔹 POST: https://barrigarest.wcaquino.me/transacoes | Payload: {}
+2025-06-07 20:21:18,536 - DEBUG - Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+2025-06-07 20:21:18,756 - DEBUG - https://barrigarest.wcaquino.me:443 "POST /transacoes HTTP/1.1" 400 465
+2025-06-07 20:21:18,756 - INFO - 🔹 Complete response: [{"param":"data_transacao","msg":"Data da Movimentação é obrigatório"},{"param":"data_pagamento","msg":"Data do pagamento é obrigatório"},{"param":"descricao","msg":"Descrição é obrigatório"},{"param":"envolvido","msg":"Interessado é obrigatório"},{"param":"valor","msg":"Valor é obrigatório"},{"param":"valor","msg":"Valor deve ser um número"},{"param":"conta_id","msg":"Conta é obrigatório"},{"param":"status","msg":"Situação é obrigatório"}]
+2025-06-07 20:21:18,757 - INFO - 🔹 Expected Status Code: 400 | Recebido: 400
