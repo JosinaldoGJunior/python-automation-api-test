@@ -1,0 +1,15 @@
+INFO     root:base_test.py:39 🔹 POST: https://barrigarest.wcaquino.me/contas | Payload: {'nome': 'Contac625c'}
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://barrigarest.wcaquino.me:443 "POST /contas HTTP/1.1" 201 68
+INFO     root:base_test.py:60 🔹 Complete response: {"id":2493600,"nome":"Contac625c","visivel":true,"usuario_id":59590}
+INFO     root:base_test.py:61 🔹 Expected Status Code: 201 | Recebido: 201
+INFO     root:base_test.py:39 🔹 POST: https://barrigarest.wcaquino.me/transacoes | Payload: {'conta_id': 2493600, 'descricao': 'Descricao_9c493', 'envolvido': 'Envolvidos_f6178', 'tipo': 'REC', 'data_transacao': '21/06/2025', 'data_pagamento': '26/06/2025', 'valor': 566.85, 'status': False}
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://barrigarest.wcaquino.me:443 "POST /transacoes HTTP/1.1" 201 311
+INFO     root:base_test.py:60 🔹 Complete response: {"id":2340185,"descricao":"Descricao_9c493","envolvido":"Envolvidos_f6178","observacao":null,"tipo":"REC","data_transacao":"2025-06-21T03:00:00.000Z","data_pagamento":"2025-06-26T03:00:00.000Z","valor":"566.85","status":false,"conta_id":2493600,"usuario_id":59590,"transferencia_id":null,"parcelamento_id":null}
+INFO     root:base_test.py:61 🔹 Expected Status Code: 201 | Recebido: 201
+INFO     root:base_test.py:51 🔹 DELETE: https://barrigarest.wcaquino.me/contas/2493600 | Payload: None
+DEBUG    urllib3.connectionpool:connectionpool.py:1049 Starting new HTTPS connection (1): barrigarest.wcaquino.me:443
+DEBUG    urllib3.connectionpool:connectionpool.py:544 https://barrigarest.wcaquino.me:443 "DELETE /contas/2493600 HTTP/1.1" 500 290
+INFO     root:base_test.py:60 🔹 Complete response: {"name":"error","length":301,"severity":"ERROR","code":"23503","detail":"Key (id)=(2493600) is still referenced from table \"transacoes\".","schema":"public","table":"transacoes","constraint":"transacoes_conta_id_foreign","file":"ri_triggers.c","line":"3338","routine":"ri_ReportViolation"}
+INFO     root:base_test.py:61 🔹 Expected Status Code: 500 | Recebido: 500
