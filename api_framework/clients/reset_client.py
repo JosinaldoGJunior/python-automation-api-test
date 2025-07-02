@@ -13,7 +13,6 @@ class ResetClient:
         Args:
             auth_headers (dict): A dictionary containing the authentication headers.
         """
-        # Acessamos os atributos diretamente da classe Config
         self.base_url = Config.APP_BASE_URL
         self.auth_headers = auth_headers
 
@@ -21,7 +20,6 @@ class ResetClient:
         """
         Sends an authenticated GET request to /reset to clear user data.
         """
-        # Usamos a URL base armazenada na instância
         return requests.get(f"{self.base_url}/reset", headers=self.auth_headers)
 
     def reset_state_without_auth(self) -> requests.Response:

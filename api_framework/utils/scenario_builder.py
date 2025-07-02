@@ -3,9 +3,6 @@ from api_framework.clients.accounts_client import AccountsClient
 from api_framework.clients.transactions_client import TransactionsClient
 from api_framework.utils import payload_generator
 
-# This module contains helper functions to build complex test preconditions
-# in a simple and reusable way, making the 'Arrange' step of tests cleaner.
-
 def create_account_and_get_id(accounts_client, payload: dict = None) -> int:
     """
     Creates a valid account and returns its ID.

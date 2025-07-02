@@ -70,7 +70,6 @@ def reset_client(auth_headers: dict) -> ResetClient:
     return ResetClient(auth_headers=auth_headers)
 
 
-# --- FIXTURES for Test Data Payloads ---
 
 @pytest.fixture
 def account_payload() -> dict:
@@ -93,7 +92,6 @@ def income_transaction_payload() -> dict:
     """
     Provides a new payload for an INCOME transaction. This is now deterministic.
     """
-    # Note: The account_id will be set within the test itself.
     return payload_generator.generate_new_income_payload(account_id=None)
 
 
