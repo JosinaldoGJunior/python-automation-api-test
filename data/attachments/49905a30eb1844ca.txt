@@ -1,3 +1,0 @@
-
-Resetting application state before test run...
-State reset successfully.
